@@ -14,3 +14,9 @@ Projeto didático para estudo de:
 - js/script.js → Lógica da aplicação
 
 Este projeto será desenvolvido em aula utilizando GitHub Codespaces.
+
+## Linguagens utilizadas
+
+- HTML
+- CSS
+- JavaScript
