@@ -1,48 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Mini Social</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Mini Social</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+}
+
+header {
+  background: #6c5ce7;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.feed {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.username {
+  color: gray;
+  font-size: 14px;
+}
+
+.post-text {
+  margin: 15px 0;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.likeBtn {
+  background: #dfe6e9;
+}
+
+.dislikeBtn {
+  background: #dfe6e9;
+}
+
+.liked {
+  background: #645aad;
+  color: white;
+}
+
+.disliked {
+  background: #995c5c;
+  color: white;
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
-  <h1 class="logo">Mini Social</h1>
+  <h1>Mini Social 💜</h1>
 </header>
 
 <main class="feed">
 
   <article class="post">
+
     <div class="post-header">
-      <img src="assets/profile.png" class="avatar">
+      <!-- saimon -->
+     <img src="https://www.kindpng.com/picc/m/21-215214_dibujos-animados-png-images-simon-alvin-e-os.png" class="avatar">
+
       <div>
-        <span class="name">Juliano Dev</span>
-        <span class="username">@julianocode</span>
+        <span class="name">saimon</span><br>
+        <span class="username">@maridapenha</span>
       </div>
     </div>
 
     <p class="post-text">
-      Hoje começamos a desenvolver nosso próprio algoritmo de interação social usando JavaScript 🚀
+      Hoje foi dia de pão na chapa e um pouco de drama 👩‍💻🔥
     </p>
 
     <div class="post-actions">
-      <button id="likeBtn">Curtir</button>
-      <span id="likeCount">0</span>
+      <button class="likeBtn">👍 Curtir</button>
+      <button class="dislikeBtn">👎 Descurtir</button>
+      <span class="likeCount">0</span>
     </div>
-
-    <section class="comments">
-      <div class="comment">
-        <img src="assets/avatar.png" class="avatar-small">
-        <p>Excelente iniciativa! 🔥</p>
-      </div>
-
-      <div class="comment">
-        <img src="assets/avatar.png" class="avatar-small">
-        <p>Vamos dominar decisão e repetição!</p>
-      </div>
-    </section>
 
   </article>
 
